@@ -1,11 +1,14 @@
-$primaryColor: #1d295f; 
-$secondaryColor: #7c1d47;
-$accentColor: #3990c3;
-$greyColor: #ccc;
+$primaryColor: #58b5dc;       // Bright Sky Blue (logo's main color)
+$secondaryColor: #005a9c;     // Deep Blue (shadow tone from the logo)
+$accentColor: #33ccff;        // Light Aqua (highlight/accent shade)
+$greyColor: #e0e0e0;          // Light Neutral Grey (backgrounds, dividers)
+$fontColor: #222222;   
 
-$defaultFont: "Rubik", sans-serif;
+$defaultFont: 'Raleway', sans-serif;
+$displayFont: 'Oswald', sans-serif;
 $lightWeight: 300;
 $normalWeight: 500;
+$boldWeight: 700;
 $leading: 150%;
 
 $gutter: 10px;

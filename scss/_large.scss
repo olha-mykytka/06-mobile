@@ -1,6 +1,24 @@
-header, nav, main {
-    max-width: 960px;
-    margin: auto;
+/* LARGE BREAKPOINT STYLES (DESKTOP SIZE) */
+
+/* Center Page Content */
+header,
+nav,
+main,
+footer {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+#hamb {
+  display: none;
 }
 
-/* NAVIGATION STUFF GOES HERE  */
+/* Responsive Columns for Large Screens */
+@for $i from 1 through 12 {
+  $w: calc($i / 12) * 100%;
+  .large-#{$i} {
+    flex-basis: $w;
+  }
+}

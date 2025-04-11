@@ -1,1 +1,38 @@
-/* NAVIGATION STUFF GOES HERE  */
+/* MEDIUM BREAKPOINT STYLES (TABLET SIZE) */
+
+/* Header Styling */
+header {
+    padding: 2rem $gutter;
+    align-items: center;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Hide Hamburger Menu on Medium Screens */
+  #navWrapper button {
+    display: none;
+  }
+  #hamb {
+    display: none;
+  }
+  
+  /* Navigation Styles */
+  #navWrapper nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  /* Responsive Columns for Medium Screens */
+  @for $i from 1 through 12 {
+    $w: calc($i / 12) * 100%;
+    .medium-#{$i} {
+      flex-basis: $w;
+    }
+  }
+  
