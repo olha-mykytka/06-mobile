@@ -68,7 +68,7 @@ header {
  
 }
 
-// NAV
+// NAVIGATION
 #navWrapper {
   background-color: $accentColor;
   padding: 0.5rem 1rem;
@@ -76,10 +76,10 @@ header {
   nav {
     display: none;
     flex-direction: column;
-    background: white;
+    background: #ffffff;
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: absolute;
     right: 1rem;
     top: 5.5rem;
@@ -92,20 +92,27 @@ header {
     a {
       font-weight: $boldWeight;
       text-decoration: none;
-      color: $primaryColor;
+      color: $secondaryColor; // darker, more accessible text color
       padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, color 0.2s ease;
 
-      &:hover {
-        color: $secondaryColor;
+      &:hover,
+      &:focus {
+        color: white;
+        background-color: $secondaryColor;
+        outline: none;
       }
 
       &.active {
-        color: $secondaryColor;
-        text-decoration: underline;
+        color: white;
+        background-color: $primaryColor;
+        text-decoration: none;
       }
     }
   }
 }
+
 
 // HEADINGS
 h2 {
