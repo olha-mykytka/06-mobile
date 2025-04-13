@@ -162,8 +162,22 @@ main img {
   border-radius: 8px;
 }
 .fill {
-  background-color: $secondaryColor;
-  color: white;
+  background-color: $greyColor; // #e0e0e0
+  color: $fontColor; // #1a1a1a or #222222, good contrast on light bg
+  padding: 2rem;
+  border-radius: 12px;
+
+  h3 {
+    color: $secondaryColor; // Deep blue heading
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
+  }
+
+  p {
+    color: $fontColor;
+    line-height: 1.6;
+  }
 }
 .shadow {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
